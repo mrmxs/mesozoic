@@ -8,10 +8,16 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Mesozoic Blog | Feed</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <body>
-        <h1 class='blog_title'> Mesozoic Blog </h1>
-        <div class='posts'>
+        <header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Mesozoic Blog</a>
+            </div>
+        </header>
+        <div class='container'>
         
         
             <?php
@@ -30,16 +36,16 @@ for ($index = 0; $index < 6; $index++) {
     echo "<div class='post'>
       <em class='post_date'>$date</em>
       <h3 class='post_title'>$title</h3>
-      <div class='post_text'>$text</div>
-      <hr/>
+      <div class='post_text'><p>$text</p></div>
+      <!--<hr/>-->
     </div>
     ";    
 } 
             ?>
         </div>
         
-        <footer> 
-            <p>Mesozoic Blog <br> Copyright &copy; 2016</p>
+        <footer class="navbar navbar-default navbar-fixed-bottom"> 
+            <p class="container text-right">Mesozoic Blog <br> Copyright &copy; 2016</p>
         </footer>
     </body>
 </html>
