@@ -6,12 +6,9 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
-    <body>
-        <header class="navbar navbar-default navbar-fixed-top navbar-inverse">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/Mesozoic/">Mesozoic Blog</a>
-            </div>
-        </header>
+    <body>        
+        <?php include 'header.php'; ?>
+        
         <div class='container'>
             <?php foreach($articles as $article): ?>
             <div class='post'>
@@ -26,12 +23,6 @@
             <?php endforeach; ?>
         </div>
         
-        <footer class="navbar navbar-default navbar-fixed-bottom"> 
-            <p class="container text-right">Mesozoic Blog <br> Copyright &copy; 2016</p>
-        </footer>
+        <?php include 'footer.php'; ?>
     </body>
 </html>
-
-<!--
-//https://yandex.ru/referats/
--->
