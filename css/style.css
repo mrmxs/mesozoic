@@ -27,3 +27,9 @@ body {
 .admin-center {
     margin-top: 7px;
 }
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+}
