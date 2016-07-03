@@ -9,13 +9,19 @@ and open the template in the editor.
 */
 
 body {
-   padding-top: 20px;   
-   padding-bottom: 20px; 
+   padding-top: 60px;   
+   padding-bottom: 60px; 
 }
 
 .post {
     margin-bottom: 50px;
     margin-top: 50px;
+}
+.post:first-of-type {
+    margin-top: 0px;
+}
+.post:last-of-type{
+    margin-bottom: 0px;
 }
 
 .admin-center {
