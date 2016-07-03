@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile /home/mrmxs/Dev/Mesozoic/admin/.htpasswd
+Require valid-user
