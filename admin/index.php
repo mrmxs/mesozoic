@@ -9,7 +9,7 @@
             
     if ($action == "add") {
         if (!empty($_POST)) {
-            articles_new($_POST['title'], $_POST['date'], $_POST['content']);
+            articles_new( $_POST['date'], $_POST['title'], $_POST['content']);
             header("Location: index.php");
         }
         include "../views/addForm_admin.php";        
