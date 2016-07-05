@@ -12,6 +12,7 @@
         <div class='container'>
             
             <h1>New Post</h1>
+            <a href="https://yandex.ru/referats/">Яндекс.Рефераты</a>
             
             <form method="post" action="index.php?action=add" role="form">
                 <div class="form-group">
