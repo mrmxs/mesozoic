@@ -30,7 +30,18 @@ function articles_new($date, $title, $content) {
     return true;
 }
 
-function articles_edit($id, $title, $date, $content) {
+function articles_edit($id, $date, $title, $content) {
+    global $arr;
+
+    $arr[$id-1] = [
+        "id" => $id,
+        "date" => $date,
+        "title" => $title,
+        "content" => $content];
+        
+    file_put_contents($_SERVER['DOCUMENT_ROOT'].'Mesozoic/models/posts.json',json_encode($arr));
+        
+    return true;
     
 }
 
